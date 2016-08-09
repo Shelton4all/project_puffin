@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  #config/routes.rb setting the root of our application to post#index 
+
+  Rails.application.routes.draw do
+    root to: "posts#index"
+
+    resources :posts
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +60,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
 end
