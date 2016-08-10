@@ -1,6 +1,7 @@
 #config/routes.rb setting the root of our application to post#index
 
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   root to: "posts#index"
 
   resources :posts
